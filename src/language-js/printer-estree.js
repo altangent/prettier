@@ -1455,7 +1455,7 @@ function printPathNoParens(path, options, print, args) {
 
       if (n.alternate) {
         if (n.consequent.type === "BlockStatement") {
-          parts.push(" else");
+          parts.push(hardline, "else");
         } else {
           parts.push(hardline, "else");
         }
